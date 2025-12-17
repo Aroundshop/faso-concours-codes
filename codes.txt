@@ -1,3 +1,36 @@
-CODEALPHA123
-CODEBETA456
-CODETEST789
+# ===============================
+#   CODES FASO CONCOURS
+# ===============================
+#
+# Format: CODE,YYYY-MM-DD
+# ou      CODE,none  (pour un code qui n'expire jamais)
+#
+# Lignes commençant par # sont des commentaires et sont ignorées.
+
+# --- Codes permanents (pour vous, des partenaires, etc.) ---
+ADMINSAWADOGO,none
+SUPERPREMIUM,none
+
+# --- Codes pour les utilisateurs (valides un an) ---
+PREMIUM2025-001,2026-01-01
+PREMIUM2025-002,2026-01-01
+PREMIUM2025-003,2026-01-01
+PREMIUM2025-004,2026-01-01
+PREMIUM2025-005,2026-01-01
+
+# --- Codes pour des promotions (valides pour une plus courte durée) ---
+PROMO-NOEL-2025,2026-01-15
+PROMO-TABASKI,2026-07-01
+PROMO-FIN-ANNEE,2026-01-05
+
+# --- Codes de test ---
+TEST-VALIDE,2026-12-31
+TEST-EXPIRE,2024-01-01
+TEST-PERMANENT,none
+
+# --- Vous pouvez générer une longue liste de codes ici ---
+FASO-A1B2-C3D4,2026-02-10
+FASO-E5F6-G7H8,2026-02-10
+FASO-I9J0-K1L2,2026-02-10
+FASO-M3N4-O5P6,2026-02-10
+FASO-Q7R8-S9T0,2026-02-10
