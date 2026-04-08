@@ -20,7 +20,7 @@ PREMIUM2025-005,2026-01-01
 
 # --- Codes pour des promotions (valides pour une plus courte durée) ---
 PROMO-NOEL-2025,2026-01-15
-PROMO-TABASKI,2026-02-01
+PROMO-TABASKI,2025-02-01
 PROMO-FIN-ANNEE,2026-01-05
 
 # --- Codes de test ---
