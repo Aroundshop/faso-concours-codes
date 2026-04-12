@@ -24,7 +24,9 @@ PROMO-FIN-ANNEE,2026-01-05
 # --- Codes de test ---
 TEST-VALIDE,2026-12-31
 TEST-EXPIRE,2024-01-01
+TESk-ECPIHE,2024-01-01
 TEST-PERMANENT,none
+
 
 # --- Vous pouvez générer une longue liste de codes ici ---
 FASO-E5F6-G7H8,2026-07-27
