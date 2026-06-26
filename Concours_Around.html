@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sécurisé | Politique de Confidentialité Concours_Around</title>
+    <title>OFFICIEL | Confidentialité & Accès - Concours_Around</title>
     
     <!-- Polices et Icônes Premium -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
@@ -11,8 +11,9 @@
 
     <style>
         :root {
-            --primary: #2E7D32; /* Votre Vert Préféré */
+            --primary: #2E7D32; /* Vert Professionnel */
             --primary-dark: #1B5E20;
+            --whatsapp: #25D366;
             --accent: #81C784;
             --bg-gradient: linear-gradient(135deg, #f1f8e9 0%, #dcedc8 100%);
             --glass: rgba(255, 255, 255, 0.9);
@@ -31,6 +32,7 @@
             background-attachment: fixed;
             color: #2c3e50;
             line-height: 1.7;
+            overflow-x: hidden;
         }
 
         /* ANIMATIONS */
@@ -44,117 +46,144 @@
             position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255,255,255,0.3);
         }
         .logo { color: var(--primary); font-weight: 800; font-size: 1.4em; display: flex; align-items: center; gap: 10px; }
-        .status { background: #e8f5e9; color: var(--primary); padding: 5px 15px; border-radius: 50px; font-size: 0.8em; font-weight: 700; border: 1px solid var(--accent); }
+        .badge-verified { background: #e8f5e9; color: var(--primary); padding: 5px 15px; border-radius: 50px; font-size: 0.8em; font-weight: 700; border: 1px solid var(--accent); }
 
         /* HERO */
-        .hero { padding: 80px 8% 120px; text-align: center; animation: fadeIn 0.8s ease-out; }
-        .hero h1 { font-size: 3.2em; color: var(--primary-dark); font-weight: 800; margin-bottom: 15px; }
-        .hero p { font-size: 1.2em; opacity: 0.8; max-width: 600px; margin: auto; }
+        .hero { padding: 60px 8% 100px; text-align: center; animation: fadeIn 0.8s ease-out; }
+        .hero h1 { font-size: 3em; color: var(--primary-dark); font-weight: 800; margin-bottom: 10px; }
+        .hero p { font-size: 1.2em; opacity: 0.8; max-width: 650px; margin: auto; }
 
         /* MAIN CONTAINER */
-        .container { max-width: 1000px; margin: -80px auto 60px; padding: 0 20px; }
+        .container { max-width: 1000px; margin: -60px auto 60px; padding: 0 20px; }
 
         /* GLASS CARD */
         .glass-card { 
             background: var(--glass); backdrop-filter: blur(20px);
-            padding: 50px; border-radius: 30px; box-shadow: var(--shadow);
+            padding: 45px; border-radius: 30px; box-shadow: var(--shadow);
             border: 1px solid rgba(255,255,255,0.5); animation: fadeIn 1s ease-out;
         }
 
-        /* ALERT BOX ANTI-FRAUDE */
-        .alert-box { 
-            background: #fff3e0; border-left: 5px solid #ff9800; 
-            padding: 20px; border-radius: 10px; margin-bottom: 40px;
-            color: #e65100; font-weight: 600; font-size: 0.95em;
+        /* BOX INFO CONFIANCE */
+        .trust-box { 
+            background: #e3f2fd; border-left: 5px solid #2196f3; 
+            padding: 20px; border-radius: 12px; margin-bottom: 35px;
+            color: #0d47a1; font-weight: 500;
         }
 
         /* GRID INFO */
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 40px 0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin: 35px 0; }
         .info-card { 
-            background: white; padding: 30px; border-radius: 20px; 
-            text-align: center; border: 1px solid #f0f0f0; transition: 0.3s;
+            background: rgba(255,255,255,0.6); padding: 25px; border-radius: 20px; 
+            text-align: center; border: 1px solid #fff; transition: 0.3s;
         }
-        .info-card:hover { transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        .info-card i { font-size: 2.5em; color: var(--primary); margin-bottom: 15px; }
+        .info-card i { font-size: 2.2em; color: var(--primary); margin-bottom: 15px; }
+        .info-card h3 { margin-bottom: 10px; color: var(--primary-dark); }
 
-        /* BOUTON CONTACT */
-        .contact-area { text-align: center; margin-top: 50px; padding-top: 40px; border-top: 1px solid #eee; }
-        .email-btn { 
-            display: inline-flex; align-items: center; gap: 12px;
-            background: var(--primary); color: white; padding: 15px 35px;
-            border-radius: 50px; text-decoration: none; font-weight: 700;
-            box-shadow: 0 10px 25px rgba(46, 125, 50, 0.3); transition: 0.3s;
+        /* SECTION WHATSAPP */
+        .whatsapp-area { 
+            background: #f1f8e9; border: 2px dashed var(--whatsapp); 
+            padding: 35px; border-radius: 25px; text-align: center; margin: 40px 0;
         }
-        .email-btn:hover { background: var(--primary-dark); transform: scale(1.05); }
+        .btn-whatsapp { 
+            display: inline-flex; align-items: center; gap: 12px;
+            background: var(--whatsapp); color: white; padding: 16px 35px;
+            border-radius: 50px; text-decoration: none; font-weight: 700;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2); transition: 0.3s;
+            margin-top: 20px;
+        }
+        .btn-whatsapp:hover { transform: scale(1.05); background: #1ebe57; }
+
+        /* CONTACT AREA */
+        .contact-footer { text-align: center; margin-top: 50px; padding-top: 30px; border-top: 1px solid #eee; }
+        .email-link { color: var(--primary); font-weight: 700; text-decoration: none; border-bottom: 2px solid var(--accent); }
 
         footer { text-align: center; padding: 40px; opacity: 0.6; font-size: 0.85em; }
 
         @media (max-width: 768px) {
-            .hero h1 { font-size: 2.2em; }
+            .hero h1 { font-size: 2.1em; }
             .glass-card { padding: 30px 20px; }
         }
     </style>
 </head>
-<body oncontextmenu="return false;"> <!-- Bloquer clic droit -->
+<body oncontextmenu="return false;"> <!-- Bloquer le clic droit -->
 
 <header>
-    <div class="logo"><i class="fas fa-shield-halved"></i> Concours_Around</div>
-    <div class="status">Certification Officielle</div>
+    <div class="logo"><i class="fas fa-shield-check"></i> Concours_Around</div>
+    <div class="badge-verified"><i class="fas fa-certificate"></i> DÉVELOPPEUR VÉRIFIÉ</div>
 </header>
 
 <section class="hero">
-    <h1>Protection & Confidentialité</h1>
-    <p>Une politique transparente pour une préparation sereine, développée par <strong>SAWADOGO Arouna</strong>.</p>
+    <h1>Espace Sécurité & Accès</h1>
+    <p>La plateforme officielle de <strong>SAWADOGO Arouna</strong> pour votre réussite aux concours.</p>
 </section>
 
 <div class="container">
     
-    <div class="alert-box">
-        <i class="fas fa-triangle-exclamation"></i> SÉCURITÉ : Le développeur SAWADOGO Arouna ne vous demandera jamais d'argent ou d'identifiants personnels par e-mail ou via l'application.
-    </div>
-
     <div class="glass-card">
-        <h2><i class="fas fa-user-lock"></i> Notre Engagement</h2>
-        <p style="margin-top: 15px;">Chez <strong>Concours_Around</strong>, nous avons fait le choix technique radical de la sécurité : la base de données est intégrée à votre téléphone.</p>
+        <div class="trust-box">
+            <i class="fas fa-info-circle"></i> <strong>Note aux Candidats :</strong><br>
+            L'application fonctionne en mode local pour protéger vos données. L'accès au contenu premium est sécurisé par un code d'activation officiel.
+        </div>
+
+        <h2><i class="fas fa-user-shield"></i> 1. Respect de la Vie Privée</h2>
+        <p>L'application ne collecte aucune donnée personnelle. Vos scores, temps de réponse et progression sont stockés exclusivement sur votre appareil.</p>
 
         <div class="grid">
             <div class="info-card">
-                <i class="fas fa-server"></i>
-                <h3>0 Serveur Externe</h3>
-                <p>Vos quiz et vos scores ne sortent jamais de votre téléphone. Zéro cloud = Zéro fuite.</p>
+                <i class="fas fa-wifi-slash"></i>
+                <h3>Mode Offline</h3>
+                <p>Pas de cloud, pas de serveurs. Vos données ne quittent jamais votre téléphone.</p>
             </div>
             <div class="info-card">
-                <i class="fas fa-mask"></i>
-                <h3>100% Anonyme</h3>
-                <p>Aucune création de compte n'est requise. Nous ne collectons ni votre nom, ni votre e-mail.</p>
+                <i class="fas fa-user-secret"></i>
+                <h3>Anonymat</h3>
+                <p>Aucune création de compte requise. Nous ne stockons ni nom, ni email.</p>
             </div>
             <div class="info-card">
-                <i class="fas fa-hand-holding-heart"></i>
-                <h3>Contrôle Total</h3>
-                <p>Vous êtes maître de vos données. Désinstallez l'application pour tout effacer instantanément.</p>
+                <i class="fas fa-lock"></i>
+                <h3>Souveraineté</h3>
+                <p>Désinstallez l'application pour effacer toutes vos données instantanément.</p>
             </div>
         </div>
 
-        <h2 style="margin-top:40px;"><i class="fas fa-file-shield"></i> Transparence Technique</h2>
-        <p>L'application utilise uniquement les permissions Android nécessaires à l'affichage du contenu éducatif. Aucune analyse comportementale n'est effectuée sur vos habitudes d'étude.</p>
+        <h2><i class="fas fa-shopping-cart"></i> 2. Acquisition & Activation</h2>
+        <p>Pour garantir la sécurité de votre achat et éviter les fraudes, le seul canal officiel pour obtenir votre code d'activation est la discussion directe avec le développeur.</p>
 
-        <div class="contact-area">
-            <h3>Contactez le Développeur Officiel</h3>
-            <p>Pour toute question ou signalement d'abus :</p>
-            <p style="font-weight: 700; margin: 15px 0;">SAWADOGO Arouna</p>
+        <div class="whatsapp-area">
+            <h3><i class="fab fa-whatsapp"></i> Support & Activation Officielle</h3>
+            <p>Cliquez ci-dessous pour m'envoyer un message et activer votre application.</p>
+            <p style="font-size: 0.85em; color: #666; margin-top: 10px;">(Vérifiez que vous contactez le numéro officiel de <strong>SAWADOGO Arouna</strong>)</p>
             
-            <!-- LIEN EMAIL CLIQUEABLE -->
-            <a href="Sawadogo.Arouna121@gmail.com" class="email-btn">
-                <i class="fas fa-paper-plane"></i> votre.email@gmail.com
+            <!-- REMPLACEZ 226XXXXXXXX par votre numéro WhatsApp (ex: 22670000000) -->
+            <a href="https://wa.me/22655105895?text=Bonjour%20Arouna,%20je%20souhaite%20activer%20mon%20application%20Concours_Around" class="btn-whatsapp" target="_blank">
+                DISCUTER SUR WHATSAPP
             </a>
+        </div>
+
+        <h2><i class="fas fa-check-double"></i> 3. Engagement de Confiance</h2>
+        <p>En passant par ce canal, vous bénéficiez d'un support technique personnalisé. En cas de perte de votre téléphone, votre licence est protégée par notre registre de vente sécurisé.</p>
+
+        <div class="contact-footer">
+            <h3>Contact de Secours</h3>
+            <p>Email officiel : <a href="mailto:votre.email@gmail.com" class="email-link">Sawadogo.Arouna121@gmail.com</a></p>
+            <p style="margin-top: 15px; font-weight: 700; color: var(--primary-dark);">SAWADOGO Arouna</p>
         </div>
     </div>
 
     <footer>
-        &copy; 2024 Concours_Around | Tous droits réservés à SAWADOGO Arouna.<br>
-        Hébergement sécurisé SSL | Design certifié.
+        &copy; 2024 Concours_Around | Conçu avec rigueur par SAWADOGO Arouna.<br>
+        Hébergement sécurisé SSL | Protection des données garantie.
     </footer>
 </div>
+
+<script>
+    // Sécurité supplémentaire : désactiver les raccourcis de copie
+    document.onkeydown = function(e) {
+        if(e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 73)) {
+            return false;
+        }
+    };
+</script>
 
 </body>
 </html>
