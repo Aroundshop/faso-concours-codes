@@ -25,7 +25,7 @@ PROMO-FIN-ANNEE,2026-01-05
 TEST-VALIDE,2026-12-31
 TEST-EXPIRE,2026-01-01
 TESk-ECPIHE,2027-01-01
-TEST-PERMANENT,none
+TEST-PERMANT4,none
 
 
 # --- Vous pouvez générer une longue liste de codes ici ---
